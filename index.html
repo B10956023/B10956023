@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <title>RWD-B10956023</title>
+
     <style>
         body {
             font-family: 'Noto Sans JP';
@@ -33,7 +34,7 @@
             padding-bottom: 2rem;
             color: rgba(255, 255, 255, 0.8);
             text-align: center;
-            background-image: url('https://mis.npust.edu.tw/wp-content/uploads/2013/01/v.jpg');
+            background-image: url('https://live.staticflickr.com/4297/35342716594_bbe91fc09d_b.jpg');
             background-position: center;
             background-size: cover;
         }
@@ -57,6 +58,32 @@
         .card {
             margin: auto;
         }
+        
+        .title {
+            text-align: center;
+            color: rgb(98, 0, 255);
+            font-size: 150%;
+        }
+        
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: 1px solid #5cb85c;
+            outline: none;
+            background-color: #fff;
+            color: #5cb85c;
+            cursor: pointer;
+            padding: 10px 15px 15px 15px;
+            border-radius: 10px;
+        }
+        
+        .back-to-top:hover {
+            background-color: #5cb85c;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -71,87 +98,230 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                        <a class="nav-link" href="#">宜蘭歷史</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">新聞</a>
+                        <a class="nav-link" href="#">宜蘭美食</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">成果</a>
+                        <a class="nav-link" href="#">宜蘭景點</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">師資</a>
+                        <a class="nav-link" href="#">重要節慶</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">課程</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">關於</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">活動下載</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">快速連結</a>
-                    </li>
+
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
     <!-- Jumbotron區塊 --->
     <div class="jumbotron">
-        <h1 class="display-4">師資陣容</h1>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <h1 class="display-4">宜蘭</h1>
     </div>
-
+    <p></p>
+    <div id="history">
+        <hr>
+        <p class="title">宜蘭歷史</p>
+        <hr>
+        <p>宜蘭平地以蘭陽平原為主，舊名為噶瑪蘭（閩南語：Kat-má-lán；西班牙語：Cabaran）或蛤仔難（Kap-á-lān），名稱源自世居的台灣原住民「噶瑪蘭族」（Kebalan，平原的人類）。最早關於噶瑪蘭族的歷史記載始於1632年。「西元1632年西班牙人，因船隻，偶遇颶風，漂泊到『卡巴蘭』港口，船員五十人因擅闖原住民領土，遭出草抵禦。於是率領西班牙人及菲律賓人至該地，焚燬原住民部落七處，屠殺原住民十二人。而注意到此地，並將蘇澳以北的海灣，命名為『聖塔．卡塔利那』（Santa
+            Catalina），即：噶瑪蘭灣，而蘇澳港附近則命名為『聖．羅連索』（San Lorenzo）。」</p>
+        <p>1768年，漢人林漢生探訪噶瑪蘭，被殺害。1776年，林元旻由烏石港北邊的河流上溯，侵佔淇武蘭，為有紀錄漢人入墾蘭陽平原最早者[6]。1796年漢人吳沙擊潰噶瑪蘭族，佔領頭城以北土地。頭城以南之蘭陽平原則要等到1810年臺灣知府楊廷理設治才由官府直接管轄。</p>
+        <p>清治初期，宜蘭隸屬台灣府諸羅縣。1723年（雍正元年），改隸於台灣府下新設置的淡水廳。1812年（嘉慶17年），台灣府增設噶瑪蘭廳，為宜蘭地區單獨設治之始。1875年（光緒元年）噶瑪蘭廳改制為宜蘭縣，並改隸於新設立的臺北府。</p>
+        <p>日治初期，宜蘭縣改制為宜蘭支廳，隸屬於台灣總督府臺北縣。1897年（明治30年），獨立為總督府轄屬宜蘭廳。1909年劃入今新北市坪林區設坪林尾支廳。1920年（大正9年），廢廳改隸臺北州，設三郡（宜蘭郡、羅東郡、蘇澳郡），時稱蘭陽三郡，坪林則劃出。1940年宜蘭郡宜蘭街升格為臺北州直轄的宜蘭市</p>
+        <p>中華民國國民政府接收台灣初期，臺北州改制為臺北縣，蘭陽三郡與宜蘭市，分別改為臺北縣下轄的宜蘭區、羅東區、蘇澳區、宜蘭市，原郡下轄的街庄改為鎮跟鄉。1947年2月4日，蘇澳區廢除，下轄鄉鎮改為羅東區管轄。1949年3月，臺北縣增設北峰區，管轄南澳鄉、太平鄉（今大同鄉）以及烏來鄉。1950年10月，台灣省實施自治，行政區劃重組，宜蘭區、羅東區、北峰區廢除，下轄鄉鎮除烏來鄉外，加上宜蘭市，自臺北縣劃出。1950年10月10日設為宜蘭縣。</p>
+    </div>
     <!-- Card區塊 --->
+    <div id="festival">
+        <hr>
+        <p class="title">宜蘭美食</p>
+        <hr>
+    </div>
     <div class="teacher container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="card">
-                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/09/DN_FB-1-e1568692657282.jpg" class="card-img-top" alt="...">
+                    <img src="https://pic.pimg.tw/sinea100/1434246280-1989083849.jpg" class="card-img-top" alt="卜肉">
                     <div class="card-body">
-                        <p class="card-text">陳灯能教授（Deng-Neng Chen）</p>
+                        <p class="card-text">卜肉</p>
+                        <p>卜肉是宜蘭知名小吃，據說最早是由宜蘭縣三星鄉味珍香卜肉店所發明。</p>
+                        <p>「卜」在宜蘭的台灣閩南語裡的意思是「炸（食物）」，這與台灣其他縣市有異，因為其源自客家話「浮(po)」的發音，為宜蘭福佬客遺留下的客家話念法，故卜肉顧名思義是指將豬里肌肉除去筋以及油脂的部份，切成條狀，沾上佐料以及麵糊入鍋油炸而成，常以胡椒鹽或芝麻沾食。除了豬肉之外，蔬菜也可以相同方式油炸食用，台語亦稱作卜菜。 卜肉並非地方特產，老一輩的家庭主婦，每到傳統節慶祭拜，不論什麼樣的糕、炸物(當然也包含卜肉)都是一手包辦。隨著時代的不同，會做糕、炸物的婦女已少之又少，而宜蘭能保留下來，主要地理環境有關</p>
+
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="card">
-                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/04/CE-07%E5%8A%89%E6%9B%B8%E5%8A%A9-e1566654420190-500x500.jpg" class="card-img-top" alt="...">
+                    <img src="https://banbi.tw/wp-content/uploads/20180817150326_99.jpg" class="card-img-top" alt="蔥油餅">
                     <div class="card-body">
-                        <p class="card-text">劉書助教授（Shu-Chu Liu）</p>
+                        <p class="card-text">蔥油餅</p>
+                        <p>是一種由蔥花作成的煎餅，在華人社會街頭如臺灣、香港、中國大陸，以及馬來西亞、新加坡等國家常見，常作為早餐或小吃食用。</p>
+                        <p>遊客們通常都會去當地規模最大的羅東夜市踩點，吃遍所有美食。大眾的推薦首選是去這間「期間限定夜市」品嚐「三星蔥餅」、「義豐蔥油餅」。</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="card">
-                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/04/172348891-500x500.jpg" class="card-img-top" alt="...">
+                    <img src="https://b.blog.xuite.net/b/2/d/e/12584724/blog_32120/txt/194206977/11.jpg" class="card-img-top" alt="小籠包">
                     <div class="card-body">
-                        <p class="card-text">邵敏華副教授（Min-Hua Shao）</p>
+                        <p class="card-text">小籠包</p>
+                        <p>是一種誕生於中國江南地區的著名點心，吳語區以外又稱小籠包，以「體小、餡大、汁多、味鮮、皮薄、形美」而著稱。</p>
+                        <p>正常小籠包是宜蘭銅板美食代表，一顆8元皮薄餡多，尤其是羅東店Google評價4.3顆星，高達2500則左右的評論。宜蘭正常鮮肉小籠湯包幾乎是許多在地人或觀光客都會去吃的宜蘭美食推薦，店員現擀現包，使用三星蔥肉餡光看就覺得超霸氣，開業超過30年，服務態度不錯，內用外帶人潮絡繹不絕。</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="card">
-                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/06/0620-500x500.jpg" class="card-img-top" alt="...">
+                    <img src="https://lh3.googleusercontent.com/wfDbed5ioIiLNfKmHEFm0_ewjFxpevh_I3P5meDLShSVQnl2Kze7pZnsblyCs0tX9xsp6Rr0lh5CtTT0KeR7J0nrhCbVeYI4=s600" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">賴佳瑜助理教授（Chia-Yu Lai）</p>
+                        <p class="card-text">米粉羹</p>
+                        <p>宜蘭特有的小吃</p>
+                        <p>宜蘭的米粉羹最先是用大蒜先爆香，再用大骨所燉出來的高湯當湯底， 再放入米粉、竹筍、木耳、甜不辣、香菇等豐富的配料。而那一條條粗米粉的滑溜口感更是無可取代，眾多美味相交融的米粉羹，早已是宜蘭人味蕾的共同記憶。 米粉羹最好吃的季節是在6到7月的時候，因為那時候的竹筍最好吃，又脆又不會苦，最適合拿來做為製作米粉羹的配料。
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
+
+    <div id="festival">
+        <hr>
+        <p class="title">宜蘭景點</p>
+        <hr>
+    </div>
+    <div class="teacher container">
+        <diz class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="龜山島">
+                    <div class="card-body">
+                        <p class="card-text">龜山島</p>
+                        <p>龜山島位在宜蘭縣頭城鎮以東約10公里處，是臺灣地區目前尚存的活火山。龜山島上原有居民定居，但後因交通與資源不便利，便遷村至頭城。現在龜山島被規劃為兼具知性及感性之海上生態公園，藉由遊客容納量的管制，減少旅遊環境衝突，並結合鄰近海域賞鯨活動，成為北部藍色公路熱門的旅遊景點。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://cdn.walkerland.com.tw/images/upload/poi/p45055/m62014/5e28542a7d7ad0005148794f3806850f67cfa658.jpg" class="card-img-top" alt="兔子迷宮">
+                    <div class="card-body">
+                        <p class="card-text">兔子迷宮</p>
+                        <p>宜蘭知名景觀餐廳A‧maze兔子迷宮咖啡餐廳架設了最美天空步道，蘭陽平原景色盡收眼底，VIP觀景台是觀賞龜山島的最佳位置。溜滑梯、迷宮、粉紅樹屋、戲水池等都是適合親子共遊、親侶約會，閨蜜拍玩等，從白天玩到晚上，不同風情的景觀及夜景，一點都不無聊，還有特別的星空飲品、豪邁的德國豬腳拼盤，一整天玩下來也不怕餓肚子。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1577,h_1038,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/koun0frjf1pn1pxpuzb1/%E5%AE%9C%E8%98%AD%EF%BD%9C%E7%A9%8D%E6%9C%A8%E5%8D%9A%E7%89%A9%E9%A4%A8%E9%96%80%E7%A5%A8DIY%E9%AB%94%E9%A9%97TWD20%E6%8A%98%E6%8A%B5.webp"
+                        class="card-img-top" alt="積木博物館">
+                    <div class="card-body">
+                        <p class="card-text">積木博物館</p>
+                        <p>亞洲首座積木博物館「宜蘭積木方舟博物館」！收藏超過百萬顆積木、逾千件作品，從美國知名樂高大師作品到日本微型積木，娓娓道來積木傳奇歷史。更有全球最長積木名畫清明上河圖、星戰戰艦等，兼具藝術生活、歷史教育、創意發揮功能，親子旅遊的好去處！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://obs.line-scdn.net/0hHQzde94CF35HHT6ZBDtoKWNLFBF0cQR9IytGbBB4LyBqKQchen4MHmNKThw5flIhe3MMH2IbSkcvLAJ7KX1cH2I/w644" class="card-img-top" alt="蘭陽博物館">
+                    <div class="card-body">
+                        <p class="card-text">蘭陽博物館</p>
+                        <p>蘭陽博物館是一座與大地共生的建築，建築主體建造在烏石港礁遺址的西北側，以便完整保留濕地的自然生態。為了融入北海岸一帶常見的單面山地形而建造的特殊建築外觀，成為宜蘭的著名地標。其外牆以韋瓦第的四季做為發想，用不同岩質做排列仿造岩石紋理，打造大自然田野特色。館內展覽主題結合建築特色，由上而下分別設立山之層、平原層、海之層、時光廊，藉由這些展覽來表現宜蘭的地理環境、人文歷史以及豐富的自然生態。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/dkwsa3iy0c1bg0rl8qvm/%E5%AE%9C%E8%98%AD%EF%BD%9C%E5%9C%8B%E7%AB%8B%E5%82%B3%E7%B5%B1%E8%97%9D%E8%A1%93%E4%B8%AD%E5%BF%83%EF%BD%9C%E9%96%80%E7%A5%A8.jpg"
+                        class="card-img-top" alt="國立傳統藝術中">
+                    <div class="card-body">
+                        <p class="card-text">國立傳統藝術中</p>
+                        <p>宜蘭國立傳統藝術中心，位於冬山河親水公園旁，佔地相當廣大。若是來到這邊，可以在這裡悠閒遊玩一整天！傳藝中心是一座懷舊古都樂園，能夠一秒穿越時空，深度體驗台灣豐富多元的工藝、民俗技藝、戲劇、音樂、舞蹈。這裡是一個動態博物館，每日都有精彩的傳統藝陣演出，讓你絕對盡興。另有付費手作體驗課程，親自創作獨一無二的傳統手作藝品。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/cCBCs1FaVjo/maxresdefault.jpg" class="card-img-top" alt="梅花湖">
+                    <div class="card-body">
+                        <p class="card-text">梅花湖</p>
+                        <p>梅花湖風景區位在宜蘭冬山鄉，因為湖泊的外型與五瓣梅花相似，因而被命名為「梅花湖」。梅花湖除了有豐富的湖泊生態外，也是一座優美的天然水庫。梅花湖匯集了許多動、植物於此，且周邊的美食小吃林立，更有環湖協力車、遊湖動力船，讓梅花湖搖身成為親子出遊的熱門景點。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://pic.pimg.tw/anrine910070/1602490232-2193775199-g.jpg" class="card-img-top" alt="蜡藝蠟筆城">
+                    <div class="card-body">
+                        <p class="card-text">蜡藝蠟筆城</p>
+                        <p>蜡藝蠟筆城堡是宜蘭蘇澳的知名地標，吸睛的蠟筆建築外觀充滿童趣。在這裡能夠體驗最好玩的蜡筆DIY，讓小朋友藉由塗鴉、彩繪DIY激發潛能，以創意為藍本，動手實做，從彩繪中發現樂趣，沉浸寓教於樂的色彩創意天堂。是來到宜蘭非常推薦的親子景點！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="清水地熱">
+                    <div class="card-body">
+                        <p class="card-text">清水地熱</p>
+                        <p>清水地熱位於平原與山麓之交，因此開車需要開一陣子才能抵達。來到這邊，會發現清水溪谷遠處的青山會因地熱冒出裊裊白煙，有種仙境之感。清水地熱冒出的泉水量非常多，屬鹼性泉，泉水溫度可以高達攝氏95度，泉質微黃且略帶硫磺味，呈滾騰狀。過去作為地熱發電廠，而現在轉作地熱煮食及泡腳設施。這裡非常適合三五好友共同來野餐！</p>
+                    </div>
+                </div>
+            </div>
+        </diz>
+    </div>
+    </div>
+
+    <div id="festival">
+        <hr>
+        <p class="title">重要節慶</p>
+        <hr>
+    </div>
+    <div class="teacher container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/fdjfHb2-cJE/maxresdefault.jpg" class="card-img-top" alt="宜蘭綠色博覽會">
+                    <div class="card-body">
+                        <p class="card-text">宜蘭綠色博覽會</p>
+                        <p>宜蘭綠色博覽會是臺灣宜蘭縣政府每年春天舉辦的活動，簡稱綠博，首屆於2000年在位於宜蘭市的縣立運動公園舉辦，自第2屆起固定於蘇澳鎮的武荖坑風景區舉辦，2017年改至冬山鄉舉辦。綠博活動主軸以農業生活、生態保育、永續未來等方向來舉辦；每一屆的場館和展區各不相同，並且部分會在會後保留或轉移，成為永久展覽館</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://www.hotelscombined.com.tw/news/wp-content/uploads/sites/316/2019/07/Feature-4.jpg" class="card-img-top" alt="宜蘭國際童玩藝術節">
+                    <div class="card-body">
+                        <p class="card-text">宜蘭國際童玩藝術節</p>
+                        <p>以演出、展覽、遊戲、交流四大軸線，設計各種與主題相關的活動內容；並突顯「在地文化」、「親子同樂」、「學習交流」、「四海一家」等特色；內容詳如下：</p>
+                        <p>一、演出：包括國際民俗童玩舞蹈表演及歌謠表演等，每屆均會邀請至少十個國家以上來自遍布全球各大洲的傑出表演團隊來參與演出，並邀請國內各專業團體，包括宜蘭在地的蘭陽舞蹈團以及原住民學校表演團隊共襄盛舉，以拓展國內外民眾視野並達成文化交流、文化外交的目的。童玩節自1996年(民國85年)開辦以來，共計邀請過67國172個外國團體到親水公園演出。</p>
+                        <p>二、展覽：童玩節每年規劃三至四個童玩主題館，由鄉村到國際、從傳統到科技，內容包羅萬象、琳瑯滿目，展現不同國家、不同民族、不同年代的童玩文化。</p>
+                        <p>三、遊戲 （一）戲水區：為了充分展現宜蘭豐沛的水資源，童玩節充分運用舉辦場地親水公園的地利條件，加上無比的創意，設計出一座又一座、原創開發的大型戲水設施。包括1996年(民國85年)水迷宮、1997年(民國86年)驚奇隧道、1999年(民國88年)水戰車、2000年(民國89年)倒轉水迷宮、2002年(民國91年)T作戰等等，獨一無二的玩水經驗，讓童玩節的名聲逐漸偏向水域遊戲。 （二）遊戲區：童玩節的遊戲區是要展現策畫團隊『玩』的創意，而非直接引進現有遊具。如不可能的任務、立體迷宮、High
+                            Net……等，也都是充滿原創、獨一無二的大型遊戲設施。 （三）國際區：邀請國外童玩教師及參演之國外團隊，帶領現場民眾一起玩遍各國傳統民俗遊戲。</p>
+                        <p>四、交流：辦理文化藝術研習及童玩教學研習，邀請國內各項文化藝術教師指導外國團員了解本國傳統文化，同時亦邀請外國童玩教師帶領大小朋友一起認識各國傳統童玩，促進文化交流。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://i1.wp.com/www.kawaiiilan.com/wp-content/uploads/2019/08/630764.jpg?fit=1566%2C1044&ssl=1" class="card-img-top" alt="頭城搶孤">
+                    <div class="card-body">
+                        <p class="card-text">頭城搶孤</p>
+                        <p>源自清代的頭城搶孤是全臺規模最大、方式最為奇特的搶孤活動，起源與蘭陽平原的開發有著密不可分的關係，儀式的形成反映了先民開墾臺灣的艱辛歲月，並具備超渡孤魂、慎終追遠的宗教涵意。在搶孤活動的環節上，則淋漓盡致地呈現出團結互助、爭搶與分享的移民性格。現今活動中的孤棚與孤棧高度均為全臺第一，營造了最為緊張刺激的搶孤過程，兼具教育與觀賞價值。歷史沿革</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://ws.e-land.gov.tw/001/2015yilan/234/ckfile/5d6bc13c-e287-4483-ba60-ceee78cb7630@1024x768.png" class="card-img-top" alt="二龍競渡">
+                    <div class="card-body">
+                        <p class="card-text">二龍競渡</p>
+                        <p>是發自二龍村全村的祭港行為，大家熟知二龍競渡下午會划龍舟，卻不知道，二龍村的早上家家戶戶正在悄悄進行祭港拜拜。二龍競渡是二龍村的大活動，村民家家戶戶一早祭祖、地基主、犒軍完成後，待聽到龍船遊港打鑼會在家前擺案，面對淇武蘭港祭港祈求來年平安順利、風調雨順。長久以來村民自發性的祭港行為，是村內流傳的民俗文化，供品祭祀規模如七月半，是國內很特殊信仰與民俗文化（政府可沒有補助村民家庭任何一毛錢，進行祭港活動）。因為祭港不是拜七月半所以沒有插普度旗，這是識別上最大差異。祖先們一直告訴村民祭拜的是河裡的神靈，可見家家戶戶村民祭港，桌案上放有巾衣與冥紙小銀。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
