@@ -1,90 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/seo-and-marketing-18/50/50-512.png" type="image/ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <title>RWD-B10956023</title>
     <style>
-        h1 {
-            color: blue;
-            size: 30px;
-            font-weight: bold;
+        body {
+            font-family: 'Noto Sans JP';
         }
         
-        table {
-            color: gray;
-            border-style: dashed;
-            border-collapse: 10px;
+        .navbar {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .navbar img {
+            width: 80%;
+        }
+        
+        .navbar-nav {
             margin: auto;
-            border-width: 2px 2px 2px 2px;
         }
         
-        thead,
-        tbody,
-        tr,
-        td {
-            color: green;
+        .jumbotron {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
             text-align: center;
-            font-weight: bold;
-            border-style: dotted;
-            border-color: green;
-            font-size: 25px;
-            border-width: 2px 2px 2px 2px;
+            background-image: url('https://mis.npust.edu.tw/wp-content/uploads/2013/01/v.jpg');
+            background-position: center;
+            background-size: cover;
         }
         
-        th {
-            color: purple;
-            text-align: center;
-            font-weight: bold;
-            font-size: 25px;
-            border-style: dotted;
-            border-color: purple;
-            border-width: 2px 2px 2px 2px;
+        .jumbotron hr {
+            margin: 5%;
+            height: 0.25rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .teacher {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .teacher .col-12 {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+        .card {
+            margin: auto;
         }
     </style>
 </head>
 
 <body>
-    <center>
-        <table>
-            <caption style=color:blue;font-size:40px>MIS快餐店餐架表</caption>
-            <script language="JavaScript">
-                var i, j, m;
-                document.write("<thead>");
-                document.write("<tr>");
-                document.write('<th style="visibility:hidden"></th>');
+    <!-- Nav區塊 --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://mis.npust.edu.tw/wp-content/uploads/2019/05/LOGO-D2-2S-1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">新聞</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">成果</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">師資</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">課程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">活動下載</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">快速連結</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-                for (i = 8; i <= 20; i = i + 3) {
-                    if (i == 8) {
-                        document.write('<th>' + "五號餐" + i + "元" + '</th>')
-                    } else if (i == 11) {
-                        document.write('<th>' + "四號餐" + i + "元" + '</th>')
-                    } else if (i == 14) {
-                        document.write('<th>' + "三號餐" + i + "元" + '</th>')
-                    } else if (i == 17) {
-                        document.write('<th>' + "二號餐" + i + "元" + '</th>')
-                    } else if (i == 20) {
-                        document.write('<th>' + "一號餐" + i + "元" + '</th>')
-                    }
+    <!-- Jumbotron區塊 --->
+    <div class="jumbotron">
+        <h1 class="display-4">師資陣容</h1>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
 
-                }
-                document.write("/<tr>")
-                document.write("</thead>");
-                document.write("<tbody");
+    <!-- Card區塊 --->
+    <div class="teacher container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/09/DN_FB-1-e1568692657282.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">陳灯能教授（Deng-Neng Chen）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/04/CE-07%E5%8A%89%E6%9B%B8%E5%8A%A9-e1566654420190-500x500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">劉書助教授（Shu-Chu Liu）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/04/172348891-500x500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">邵敏華副教授（Min-Hua Shao）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="https://mis.npust.edu.tw/wp-content/uploads/2019/06/0620-500x500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">賴佳瑜助理教授（Chia-Yu Lai）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                for (m = 3; m <= 7; m++) {
-                    document.write("<tr>");
-                    document.write("<th>" + m + "</th>");
-                    for (j = 8; j <= 20; j = j + 3) {
-                        document.write("<td>" + m + "*" + j + "=" + m * j + "</td>");
-                    }
-                    document.write("</tr>");
-                }
-            </script>
-        </table>
-    </center>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
 </html>
